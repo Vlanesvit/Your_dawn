@@ -1,0 +1,173 @@
+.rs-about {
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 140px;
+
+	@media (max-width: 1600px) {
+		margin-top: calc(50px + (80 - 50) * ((100vw - 320px) / (1600 - 320)));
+		margin-bottom: calc(50px + (140 - 50) * ((100vw - 320px) / (1600 - 320)));
+	}
+	//========================================================================================================================================================
+	&__container {
+		position: relative;
+	}
+
+	//========================================================================================================================================================
+	&__left {
+		max-width: 738px;
+		width: 100%;
+
+		@media (max-width: 1540px) {
+			max-width: 600px;
+		}
+
+		@media (max-width: 1400px) {
+		}
+
+		@media (max-width: 992px) {
+			max-width: 100%;
+		}
+		//========================================================================================================================================================
+		.rs-about__header {
+			.rs-about__title {
+				span {
+					display: block;
+				}
+			}
+		}
+
+		//========================================================================================================================================================
+		.rs-about__description {
+			margin-top: 31px;
+			p {
+				display: block;
+				margin-top: 20px;
+			}
+		}
+
+		//========================================================================================================================================================
+		.picture-about {
+			position: absolute;
+			right: 62px;
+			top: 26px;
+			width: 800px;
+			height: 866px;
+
+			@media (max-width: 1600px) {
+				right: calc(-300px + (62 - (-300)) * ((100vw - 320px) / (1600 - 320)));
+				height: calc(260px + (866 - 260) * ((100vw - 320px) / (1600 - 320)));
+				width: calc(300px + (800 - 300) * ((100vw - 320px) / (1600 - 320)));
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			@media (max-width: 1600px) and (min-width: 992px) {
+				top: calc(150px + (26 - 150) * ((100vw - 320px) / (1600 - 320)));
+			}
+
+			@media (max-width: 992px) {
+				position: relative;
+				right: 0;
+				top: 0;
+				margin: 0px auto 0px;
+			}
+
+			.about-plrx {
+				&__item {
+					position: absolute;
+
+					img {
+						height: auto;
+						width: 100%;
+						max-width: 100%;
+						object-fit: contain;
+					}
+
+					&:nth-child(1) {
+						right: -5px;
+						top: -24px;
+
+						@media (max-width: 1600px) {
+							top: calc(10px + ((-24) - 10) * ((100vw - 320px) / (1600 - 320)));
+							right: calc(10px + ((-5) - 10) * ((100vw - 320px) / (1600 - 320)));
+							height: calc(60px + (203 - 60) * ((100vw - 320px) / (1600 - 320)));
+							width: calc(60px + (183 - 60) * ((100vw - 320px) / (1600 - 320)));
+
+							img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+					}
+
+					&:nth-child(2) {
+						bottom: 22px;
+						left: 156px;
+
+						@media (max-width: 1600px) {
+							left: calc(20px + (156 - 20) * ((100vw - 320px) / (1600 - 320)));
+							height: calc(47px + (97 - 47) * ((100vw - 320px) / (1600 - 320)));
+							width: calc(57px + (107 - 57) * ((100vw - 320px) / (1600 - 320)));
+
+							img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+					}
+
+					&:nth-child(3) {
+						bottom: 71px;
+						left: 295px;
+
+						@media (max-width: 1600px) {
+							bottom: calc(10px + (71 - 10) * ((100vw - 320px) / (1600 - 320)));
+							left: calc(200px + (295 - 200) * ((100vw - 320px) / (1600 - 320)));
+							height: calc(60px + (180 - 60) * ((100vw - 320px) / (1600 - 320)));
+							width: calc(60px + (119 - 60) * ((100vw - 320px) / (1600 - 320)));
+
+							img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//========================================================================================================================================================
+	.rs-features {
+		margin-top: 50px;
+		.list-features {
+			display: grid;
+			gap: 30px;
+			grid-template-columns: repeat(2, 1fr);
+
+			@media (max-width: 768px) {
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			.item-features {
+				display: flex;
+
+				&__img {
+					margin-right: 24px;
+					@media (max-width: 992px) {
+						margin-right: 15px;
+					}
+				}
+
+				.description-features {
+					&__text {
+						margin-top: 16px;
+					}
+				}
+			}
+		}
+	}
+}
